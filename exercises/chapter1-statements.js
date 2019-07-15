@@ -30,7 +30,7 @@ function whoIsTheArtist(song) {
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function forLoopsAreSoCool(array) {
-    for (i = 0; i < array.length; i++) {
+    for (i = 0; i < array.length; i+1) {
         const number = array[i];
         console.log(number);
     }
@@ -54,9 +54,13 @@ function whileLoopsYay() {
 let arrayForEach = [1, 2, 3, 4, 5, 6];
 
 function forEachLoopsWooHoo(array) {
+    let total = 0;
     array.forEach(element => {
-        console.log(element);
+     total = total+element; //this can also be written as total+=element
+            
     })
+    console.log(total)
+    return total
 }
 
 //6. Write a function with a for loop that takes an array of strings as a parameter that breaks once a specific string is found
@@ -77,8 +81,8 @@ function forLoopBreak(array) {
 
 //7. Write a function that throws an error if two string parameters are exactly the same
 
-function throwError(string) {
-    if(string === 'wanna see an error') {
+function throwError(string1, string2) {
+    if(string1 === string2) {
         throw "these strings are the same"
     }
 }
