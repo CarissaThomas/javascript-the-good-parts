@@ -30,7 +30,7 @@ function whoIsTheArtist(song) {
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function forLoopsAreSoCool(array) {
-    for (i = 0; i < array.length; i+1) {
+    for (i = 0; i < array.length; i+1) { //you can also write i+1 a i++
         const number = array[i];
         console.log(number);
     }
