@@ -2,7 +2,7 @@
 
 //1. Write a function that takes a string as a parameter and console logs whether or not the parameter is equal to 'cat'
 
-//2. Write a function that takes a song name and returns the corresponding artist (3 possible cases)
+//2. Write a function that takes a song name and console logs the corresponding artist (3 possible cases)
 
 //3. Write a function with a for loop that takes an array of integers as a paramter and console logs every array integer + 1
 
