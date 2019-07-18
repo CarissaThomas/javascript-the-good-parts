@@ -8,7 +8,7 @@ function cats(text) {
     }
 }
 
-//2. Write a function that takes a song name and returns the corresponding artist (3 possible cases)
+//2. Write a function that takes a song name and console logs the corresponding artist (3 possible cases)
 
 function whoIsTheArtist(song) {
     switch (song) {
