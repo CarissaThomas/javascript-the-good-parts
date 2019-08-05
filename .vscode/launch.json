@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\exercises\\chapter1-statements.js"
+            "program": "${workspaceFolder}\\exercises\\chapter1-expressions-operations.js"
         }
     ]
 }

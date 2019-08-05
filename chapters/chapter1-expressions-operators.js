@@ -93,7 +93,7 @@ function assignmentOr(x, y) {
     }
 }
 
-//Ternary
+//Ternary <---- This is basically a fancy if statement
 function assignmentTernary(x, y) {
     var isGreater = (x > y) ? console.log("assignmentTernary: x is greater than y") : console.log("assignmentTernary: x is less than y");
 }
