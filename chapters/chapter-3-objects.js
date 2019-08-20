@@ -1,5 +1,5 @@
 //CHAPTER 3: Objects
-//Objects: A container of properties, where a property has a name and a value;
+//Objects: A container of key value pairs (properties), where a key has a name and a value;
 //Property (Key): can be any string including an empty one
 //Value:  the value held by the object accessed using the key
 
@@ -21,9 +21,9 @@ function propertiesObject() {
 }
 
 //Creating keys and values on an empty object 
-function createEmptyObject(property, value) {
+function createEmptyObject(key, value) {
     var createMe = {};
-    createMe[property] = value;
+    createMe[key] = value;
 
     return createMe;
 }
@@ -75,7 +75,7 @@ function loopObject() {
 
     Object.keys(propertiesObj).forEach(function(key) {
         console.log(key);
-        console.log(obj[key]);
+        console.log(propertiesObj[key]);
     });
 }
 
