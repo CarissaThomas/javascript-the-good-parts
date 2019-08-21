@@ -4,8 +4,8 @@ let arrayForEach = [1, 2, 3, 4, 5, 6];
 function forEachLoopsWooHoo(array) {
     let total = 1;
     array.forEach(element => {
-     total = total*element; //this can also be written as total*=element
-            
+        total = total * element; //this can also be written as total*=element
+
     })
     console.log(total)
     return total
@@ -13,7 +13,7 @@ function forEachLoopsWooHoo(array) {
 //2. Write a function that tests if a parameter is even using the remainder (%) operator
 
 function isEven(x) {
-    if(x % 2 === 0) {
+    if (x % 2 === 0) {
         console.log(x + ' is even!');
     } else {
         console.log(x + ' is NOT even!');
@@ -23,18 +23,18 @@ function isEven(x) {
 
 //3. Write a function that returns true if the 1st parameter is greater than or equal to the 2nd paramter AND the 1st paramter is not greater than 5
 
-function usingAndOperator(x,y) {
-    if((x >= y || x === y) && x < 5) {// GREATER THAN OR EQUAL IS EXPRESSED WITH >=  YOU DO NOT NEED THE OTHER || X === Y STATEMENT
+function usingAndOperator(x, y) {
+    if (x >= y && x < 5) {
         console.log('That is true!'); // you can also just write this as return true
     } else {
-        console.log('That is false!');
+        console.log('That is false!'); // you can also just write this as return false
     }
 }
 
 //4. Write a function that returns false if the 1st parameter is less than or equal to the 2nd paramter OR the 1st paramter is greater than 21
-function usingOrOperator(x,y) {
-    if(x <= y || x > 21) {
-        console.log('That is false!'); // you can also just write this as return true
+function usingOrOperator(x, y) {
+    if (x <= y || x > 21) {
+        console.log('That is false!'); // you can also just write this as return false
     } else {
         console.log('That is true!'); // you can also just write this as return true
     }
@@ -60,31 +60,20 @@ function whileLoopsYay() {
 //7. Write a function that iterates through an array of integers and checks if each integer has a remainder.  If there is a remainder add it to a total.  Return the total.
 
 let testArray = [1, 2, 3, 4, 5, 6, 7];
-console.log(remaindersAreHard(testArray));
-// function remaindersAreHard(integerArray) {
-//     let total = 0;
-//     for(i=0; i <= integerArray.length; i++) {
-//         if (i %2 !== 0) {
-//             total = i++;
-//         }
 
-//     }
-
-//     console.log(total)
-// }
-
-function remaindersAreHard(integerArray) {
-    var total = 0;
-
-    for(var i = 0; i < integerArray.length; i++) {//be careful, you need to use a < in your for loop not <= 
-        if (integerArray[i] % 2 !== 0) {//integerArray[i] gives us the actual value in the array vs i is just the index number (i.e. 0, 1, 2, 3, 4, 5) no matter the values inside the arrays
-            total += integerArray[i];// use += syntax to add a number to an existing value insted of overwriting it 
-            //total = i++; be careful messing with i will change the order of your loop.  i is the counter in your loop if you do i++ you are manually incrementing it 
+function stillDontLikeRemainders(array) {
+    let total = 0;
+    for (i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
+            total = total + array[i]; //this can also be written as total+=testArray[i]
         }
     }
-
-    return total;
+    return total
 }
+
+
+    console.log(stillDontLikeRemainders(testArray));
+
 
 
 

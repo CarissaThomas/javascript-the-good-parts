@@ -39,6 +39,8 @@ function assignmentRemainder(x, y) {
     console.log("assignmentRemainder: ", total);
 }
 
+// If an integer has a remainder, it's ODD. If it doesn't it's EVEN
+
 ////////Comparison Operators
 
 //Equal 
