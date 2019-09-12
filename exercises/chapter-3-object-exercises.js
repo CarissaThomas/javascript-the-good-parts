@@ -36,8 +36,6 @@ function thisOneIsJustNotCool() {
     return propObj;
 }
 
-console.log(thisOneIsJustNotCool());
-
 //4. Write a function that iterates through an object and delete a key if it matches with a passed in parameter
 
 function thisIsHard(passedInParameter){
