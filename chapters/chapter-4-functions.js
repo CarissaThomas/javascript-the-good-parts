@@ -1,9 +1,32 @@
-//CHAPTER 3: Functions
+  //CHAPTER 3: Functions
 
 //Storing the return value of a function in a variable
 var add = function (a, b) {
     return a + b;
 }
+
+//anonymous function 
+
+function getGuidForSearch() {
+    return browser.getCurrentUrl().then(async (url) => {
+        let splitUrl = url.split("/")[4];
+
+        return splitUrl;
+    });
+}
+
+function getGuidForSearch() {
+    getGuidForSearch2();
+}
+
+function getGuidForSearch2() {
+    return browser.getCurrentUrl().then(async (url) => {
+        let splitUrl = url.split("/")[4];
+
+        return splitUrl;
+    });
+}
+
 
 //Scope: Controls the visibility and lifetime of variables and parameters
 
@@ -21,10 +44,10 @@ function myFunction() {
     console.log(localScope);
 }
 
-//Recursion
+//Recursion (when a functin calls itself8)
 function withRecursion(value) {
     if (value > 0) {
-        return countdown(value - 1);
+        return withRecursion(value - 1);
     } else {
         return value;
     }
