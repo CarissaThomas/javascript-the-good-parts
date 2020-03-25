@@ -50,7 +50,7 @@ function forLoopStatement(arrayForLoop) {
 }
 
 var arrayForLoop = [1, 2, 3, 4, 5];
-//forLoopStatement(arrayForLoop);
+forLoopStatement(arrayForLoop);
 
 
 function forInLoopStatement() {
@@ -148,4 +148,4 @@ function disruptiveTryCatchStatement() {
         // Note - error messages will vary depending on browser
     }
 }
-disruptiveTryCatchStatement()
+//disruptiveTryCatchStatement()
